@@ -57,18 +57,13 @@
 
 - name: Run Django database migrations
   args:
-    chdir: "{{ PROJECT_PATH}}"
+    chdir: "{{ PROJECT_PATH}}/{{ application_name }}"
   command: "{{ VIRTUALENV_PATH }}/bin/python manage.py migrate"
 
 - name: Run Django collectstatic
   args:
-    chdir: "{{ PROJECT_PATH}}"
+    chdir: "{{ PROJECT_PATH}}/{{ application_name }}"
   command: "{{ VIRTUALENV_PATH }}/bin/python manage.py collectstatic --noinput"
-
-- name: Run Django initial_load
-  args:
-    chdir: "{{ PROJECT_PATH}}"
-  command: "{{ VIRTUALENV_PATH }}/bin/python manage.py initial_load"
 
 - name: Remove old nginx default
   become: true

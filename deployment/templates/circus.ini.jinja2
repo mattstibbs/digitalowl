@@ -1,7 +1,7 @@
 [watcher:app]
 cmd = gunicorn
-args = ncdr_reference.wsgi -c deployment/config/gunicorn_conf.py
-working_dir = /home/ubuntu/NCDR-reference
+args = {{ application_name }}.wsgi -c deployment/config/gunicorn_conf.py
+working_dir = /home/ubuntu/{{ application_name }}
 uid = ubuntu
 numprocesses = 1
 autostart = true
