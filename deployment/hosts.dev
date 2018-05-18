@@ -1,5 +1,5 @@
 [webserver]
-ec2-18-205-161-103.compute-1.amazonaws.com
+root@django-host.aws.digi-m.tech
 
 [webserver:vars]
 ansible_python_interpreter=/usr/bin/python3

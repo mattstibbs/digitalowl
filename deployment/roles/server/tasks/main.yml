@@ -12,7 +12,7 @@
     - htop
     - iotop
     - tree
-    - ack-grep
+#    - ack-grep
     - vim
     - zip
     - screen

@@ -3,7 +3,7 @@
 ; =====================
 
 [program:gunicorn]
-command=/home/ubuntu/.virtualenvs/{{ application_name }}/bin/gunicorn {{ application_name }}.wsgi -c %(here)s/gunicorn_conf.py
+command=~/.virtualenvs/{{ application_name }}/bin/gunicorn {{ application_name }}.wsgi -c %(here)s/gunicorn_conf.py
 directory=%(here)s/../../
 ;user=nobody
 numprocs=1

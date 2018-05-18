@@ -1,27 +1,27 @@
 ---
 - name: Things you want on servers generally
   sudo: yes
-  user: ubuntu
+  user: root
   hosts: webserver
   gather_facts: no
   roles:
     - server
 
 - name: Make the server capable of running a standard Django deployment
-  user: ubuntu
+  user: root
   hosts: webserver
   roles:
     - django
 
 - name: Make the server capable of running a standard Django deployment
   sudo: yes
-  user: ubuntu
+  user: root
   hosts: webserver
   roles:
     - db
 
 - name: Set up our project
-  user: ubuntu
+  user: root
   hosts: webserver
   roles:
     - digitalowl

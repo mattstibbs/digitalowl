@@ -7,13 +7,13 @@
   apt: pkg={{ item }} state=installed
   with_items:
     - postgresql
-    - postgresql-server-dev-9.5
+    - postgresql-server-dev-9.6
     - python3-psycopg2
 
 - name: Copy in pg_hba.conf
   template:
     src: templates/pg_hba.conf.jinja2
-    dest: /etc/postgresql/9.5/main/pg_hba.conf
+    dest: /etc/postgresql/9.6/main/pg_hba.conf
     owner: postgres
     group: postgres
     mode: 0640
@@ -23,8 +23,8 @@
 - name: Copy in pgpass
   template:
     src: templates/pgpass.conf.jinja2
-    dest: /home/ubuntu/.pgpass
-    owner: ubuntu
+    dest: ~/.pgpass
+    owner: root
     mode: 0600
 
 - name: Restart postgres
