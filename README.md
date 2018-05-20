@@ -1,4 +1,8 @@
+<<<<<<< .merge_file_3kXQQQ
 NCDR Reference
+=======
+digitalowl Reference
+>>>>>>> .merge_file_i6QvhP
 ==============
 
 A viewer for the schema of the National Commissioning Data Repository
@@ -12,20 +16,40 @@ load in all existing csvs (stored in data/csvs)
 ./manage.py initial_load
 
 for future, loading in csvs
+<<<<<<< .merge_file_3kXQQQ
 ./manage.py row_loader {{ path to row csv }}
 ./manage.py table_loader {{ path to the table csv }}
+=======
+
+`./manage.py row_loader {{ path to row csv }}`
+
+`./manage.py table_loader {{ path to the table csv }}`
+>>>>>>> .merge_file_i6QvhP
 
 When running the server locally, we are using sass. So installl sass and run
 <!-- sass --watch csv_schema/static/css/styles.scss:csv_schema/static/css/styles.css -->
 
 #### deployment
 update hosts.dev (and use keys natch)
+<<<<<<< .merge_file_3kXQQQ
 set your branch in deployment/group_vars/all
 cd deployment
 ansible-playbook setup-server.yml -i hosts.dev --vault-password-file ~/.vault.txt
 
 to view the encrypted variables
 ansible-vault edit all --vault-password-file ~/.vault.txt
+=======
+
+set your branch in deployment/group_vars/all
+
+`cd deployment`
+
+`ansible-playbook setup-server.yml -i hosts.dev --vault-password-file ~/.vault.txt`
+
+to view the encrypted variables
+
+`ansible-vault edit all --vault-password-file ~/.vault.txt`
+>>>>>>> .merge_file_i6QvhP
 
 
 #### loading in new files.
@@ -47,4 +71,8 @@ These contain information about the Mappings and Groupings of different columns.
 #### TODO
 change the csv loader into a form.
 add in a search function, but lets find out which columns to query
+<<<<<<< .merge_file_3kXQQQ
 make the table look more like https://data.england.nhs.uk/dataset?
+=======
+make the table look more like https://data.england.nhs.uk/dataset?
+>>>>>>> .merge_file_i6QvhP

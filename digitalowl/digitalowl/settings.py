@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+<<<<<<< .merge_file_PTq8NC
     'django.contrib.staticfiles',
+=======
+>>>>>>> .merge_file_WHQbWV
     'ddos',
 ]
 

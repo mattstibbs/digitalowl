@@ -9,7 +9,11 @@ server {
     access_log {{ LOG_DIR }}/nginx.log timed_combined;
 
    location /static {
+<<<<<<< .merge_file_xmF9zm
         alias /home/ubuntu/{{ application_name }}/static;
+=======
+        alias ~/{{ application_name }}/static;
+>>>>>>> .merge_file_93Cbiw
     }
 
     location / {

@@ -12,7 +12,11 @@
     - htop
     - iotop
     - tree
+<<<<<<< .merge_file_6yf2BM
     - ack-grep
+=======
+#    - ack-grep
+>>>>>>> .merge_file_3mrLZp
     - vim
     - zip
     - screen

@@ -1,8 +1,8 @@
 [watcher:app]
 cmd = gunicorn
 args = {{ application_name }}.wsgi -c deployment/config/gunicorn_conf.py
-working_dir = /home/ubuntu/{{ application_name }}
-uid = ubuntu
+working_dir = ~/{{ application_name }}
+uid = root
 numprocesses = 1
 autostart = true
 stdout_stream.class = FileStream

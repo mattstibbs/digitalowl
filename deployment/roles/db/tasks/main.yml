@@ -7,13 +7,21 @@
   apt: pkg={{ item }} state=installed
   with_items:
     - postgresql
+<<<<<<< .merge_file_L39kRW
     - postgresql-server-dev-9.5
+=======
+    - postgresql-server-dev-9.6
+>>>>>>> .merge_file_ZMpOKn
     - python3-psycopg2
 
 - name: Copy in pg_hba.conf
   template:
     src: templates/pg_hba.conf.jinja2
+<<<<<<< .merge_file_L39kRW
     dest: /etc/postgresql/9.5/main/pg_hba.conf
+=======
+    dest: /etc/postgresql/9.6/main/pg_hba.conf
+>>>>>>> .merge_file_ZMpOKn
     owner: postgres
     group: postgres
     mode: 0640
@@ -23,8 +31,13 @@
 - name: Copy in pgpass
   template:
     src: templates/pgpass.conf.jinja2
+<<<<<<< .merge_file_L39kRW
     dest: /home/ubuntu/.pgpass
     owner: ubuntu
+=======
+    dest: ~/.pgpass
+    owner: root
+>>>>>>> .merge_file_ZMpOKn
     mode: 0600
 
 - name: Restart postgres

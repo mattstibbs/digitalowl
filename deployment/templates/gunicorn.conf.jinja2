@@ -3,7 +3,11 @@
 ; =====================
 
 [program:gunicorn]
+<<<<<<< .merge_file_l42Uei
 command=/home/ubuntu/.virtualenvs/{{ application_name }}/bin/gunicorn {{ application_name }}.wsgi -c %(here)s/gunicorn_conf.py
+=======
+command=~/.virtualenvs/{{ application_name }}/bin/gunicorn {{ application_name }}.wsgi -c %(here)s/gunicorn_conf.py
+>>>>>>> .merge_file_DvPekJ
 directory=%(here)s/../../
 ;user=nobody
 numprocs=1
