@@ -1,5 +1,5 @@
 ---
-# set up the NCDR project itself
+# set up the Digitalowl project itself
 
 - name: Setup the Git repo
   git: repo={{ GIT_REPO }}
@@ -67,11 +67,11 @@
   args:
     chdir: "{{ PROJECT_PATH}}/{{ application_name }}"
   command: "{{ VIRTUALENV_PATH }}/bin/python manage.py migrate"
-
-- name: Run Django collectstatic
-  args:
-    chdir: "{{ PROJECT_PATH}}/{{ application_name }}"
-  command: "{{ VIRTUALENV_PATH }}/bin/python manage.py collectstatic --noinput"
+#
+#- name: Run Django collectstatic
+#  args:
+#    chdir: "{{ PROJECT_PATH}}/{{ application_name }}"
+#  command: "{{ VIRTUALENV_PATH }}/bin/python manage.py collectstatic --noinput"
 
 - name: Remove old nginx default
   become: true
