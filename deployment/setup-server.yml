@@ -1,43 +1,29 @@
 ---
 - name: Things you want on servers generally
-  sudo: yes
-<<<<<<< .merge_file_QzDQ4A
-  user: ubuntu
-=======
+  become: yes
+  become_method: sudo
   user: root
->>>>>>> .merge_file_1Ml97w
   hosts: webserver
   gather_facts: no
   roles:
     - server
 
 - name: Make the server capable of running a standard Django deployment
-<<<<<<< .merge_file_QzDQ4A
-  user: ubuntu
-=======
   user: root
->>>>>>> .merge_file_1Ml97w
   hosts: webserver
   roles:
     - django
 
 - name: Make the server capable of running a standard Django deployment
-  sudo: yes
-<<<<<<< .merge_file_QzDQ4A
-  user: ubuntu
-=======
+  become: yes
+  become_method: sudo
   user: root
->>>>>>> .merge_file_1Ml97w
   hosts: webserver
   roles:
     - db
 
 - name: Set up our project
-<<<<<<< .merge_file_QzDQ4A
-  user: ubuntu
-=======
   user: root
->>>>>>> .merge_file_1Ml97w
   hosts: webserver
   roles:
     - digitalowl
