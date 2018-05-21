@@ -5,12 +5,12 @@ name = "pypi"
 
 [packages]
 django = "*"
-ipdb = "*"
-ansible = "*"
 nhs-dos = "*"
 
 [dev-packages]
 pytest = "*"
+circus = "*"
+ansible = "*"
 
 [requires]
 python_version = "3.6"

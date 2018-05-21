@@ -1,4 +1,5 @@
 -i https://pypi.org/simple
+<<<<<<< HEAD
 ansible==2.5.3
 appnope==0.1.0; sys_platform == 'darwin'
 asn1crypto==0.24.0
@@ -37,3 +38,13 @@ traitlets==4.3.2
 urllib3==1.22
 wcwidth==0.1.7
 nhs_dos
+=======
+certifi==2018.4.16
+chardet==3.0.4
+django==2.0.5
+idna==2.6
+nhs-dos==0.2.0
+pytz==2018.4
+requests==2.18.4
+urllib3==1.22
+>>>>>>> Update dependencies
