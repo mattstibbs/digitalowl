@@ -1,7 +1,7 @@
 [watcher:app]
 cmd = gunicorn
 args = {{ application_name }}.wsgi -c deployment/config/gunicorn_conf.py
-working_dir = ~/{{ PROJECT_PATH }}/{{ application_name }}
+working_dir = {{ PROJECT_PATH }}/{{ application_name }}
 uid = root
 numprocesses = 1
 autostart = true
