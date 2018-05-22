@@ -2,6 +2,7 @@
 certifi==2018.4.16
 chardet==3.0.4
 django==2.0.5
+gunicorn==19.8.1
 idna==2.6
 nhs-dos==0.2.0
 pytz==2018.4
