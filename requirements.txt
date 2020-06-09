@@ -1,10 +1,11 @@
--i https://pypi.org/simple
-certifi==2018.4.16
+-i https://pypi.org/simple/
+certifi==2020.4.5.1
 chardet==3.0.4
-django==2.0.5
+django==2.2.13
 gunicorn==19.8.1
-idna==2.6
+idna==2.9
 nhs-dos==0.2.0
-pytz==2018.4
-requests==2.18.4
-urllib3==1.22
+pytz==2020.1
+requests==2.23.0
+sqlparse==0.3.1
+urllib3==1.25.9
